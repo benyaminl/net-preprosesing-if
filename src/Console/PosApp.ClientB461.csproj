@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net461</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+    <AssemblyName>PosApp.ClientB</AssemblyName>
+    <RootNamespace>PosApp.Console</RootNamespace>
+    <DefineConstants>CLIENT_B</DefineConstants>
+    <OutputPath>../../bin/ClientB/</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <BaseIntermediateOutputPath>../../obj/ClientB/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Domain/PosApp.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.32" />
+    <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3" Version="2.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.32" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.32" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="appsettings.ClientB.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3 @@
+<Project>
+  <!-- Intentionally empty — BaseIntermediateOutputPath is set per-csproj before this is imported -->
+</Project>

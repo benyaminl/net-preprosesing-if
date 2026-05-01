@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Console/">
+    <Project Path="src/Console/PosApp.ClientA461.csproj" />
+    <Project Path="src/Console/PosApp.ClientB461.csproj" />
+  </Folder>
+  <Folder Name="/src/Domain/">
+    <Project Path="src/Domain/PosApp.Domain.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PosApp.Tests461.csproj" />
+  </Folder>
+</Solution>
