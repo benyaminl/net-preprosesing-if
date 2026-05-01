@@ -46,6 +46,8 @@ dotnet publish src/Console/PosApp.ClientB461.csproj -c Release -r win-x64 --self
 
 > Use `dotnet publish` (not `dotnet build`) — publish ensures the native `e_sqlite3.dll` is copied to the output folder alongside the `.exe`.
 
+We can also built it using Visual Studio, just open the slnx or csproject, then build it. 
+
 ## Run (Windows)
 
 ```cmd
@@ -72,19 +74,6 @@ Same pattern as PosApp — two `.csproj` files share the same source, each defin
 <!-- PosApp.ClientB461.csproj -->
 <DefineConstants>CLIENT_B</DefineConstants>
 ```
-
-## C# 7.3 Compatibility Notes
-
-This project targets C# 7.3 (max supported by net461). Key differences from the net8.0 version:
-
-| net8.0 (C# 12) | net461 (C# 7.3) |
-|---|---|
-| File-level namespaces | Block namespaces `namespace X { }` |
-| Top-level statements | `class Program { static void Main() }` |
-| `using var` | `using (var ...)` |
-| `new()` target-typed | `new ClassName()` |
-| Collection literals `[x]` | `new[] { x }` |
-| `Enum.Parse<T>()` | `(T)Enum.Parse(typeof(T), s)` |
 
 ## Notes
 
